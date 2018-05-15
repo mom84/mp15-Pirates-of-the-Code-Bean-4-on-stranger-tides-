@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Jack Sparow</title>
+</head>
+<body>
+<form action="/sparow" method="post">
+    <button type="submit" name="btn1" value="one">Mermaid</button>
+</form>
+<br>
+
+
+<form action="/sparow" method="post" >
+    <button type="submit" name="btn2" value="two" th:disabled="${!tear}">Tear</button>
+</form>
+<br>
+
+
+<form action="/sparow" method="post">
+    <button type="submit" name="btn3" value="three" th:disabled="${!chalice}">Chalice</button>
+</form>
+<br>
+
+
+<form action="/sparow" method="post">
+    <button type="submit" name="btn4" value="four" th:disabled="${!drink}">Drink</button>
+</form>
+
+<input type="text" th:value="${sss}">
+<!--
+<div th:text="${mermaid}"></div>
+<div th:text="${tear}"></div>
+<div th:text="${chalice}"></div>
+<div th:text="${drink}"></div>
+-->
+
+</body>
+</html>
